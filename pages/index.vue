@@ -1,6 +1,6 @@
 <template>
 <div > 
-  <!--<formseance></formseance>-->
+  <formseance></formseance>
   <liste></liste>
   <add></add>
 <listeAjouter ></listeAjouter>

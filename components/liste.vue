@@ -1,7 +1,11 @@
 <template>
-    <div class="grid grid-cols-4 gap-1 mx-24">
+    <div class="mt-8 ">
+      <span class="text-lg ml-24">Liste des exercices de la séance</span>
+    <div class="grid grid-cols-4 gap-1 mx-24 mt-2">
+      
         <exercice v-for="item in list" :key="item.name" :exercice="item"></exercice>
 
+    </div>
     </div>
 </template>
 <script>

@@ -52,6 +52,9 @@ export default {
   */
   modules: ['bootstrap-vue/nuxt'
   ],
+  bootstrapVue: {
+    icons: true // Install the IconsPlugin (in addition to BootStrapVue plugin
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
