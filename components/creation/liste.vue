@@ -9,7 +9,7 @@
     </div>
 </template>
 <script>
-import exercice from '@/components/exercice'
+import exercice from '@/components/creation/exercice'
 export default {
   components:{
     exercice,

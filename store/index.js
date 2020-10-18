@@ -7,18 +7,34 @@ const createStore=()=>{
             listeDesExercicesSeance:[],
             optionsPartie:['partie1','partie2'],
             optionsTheme:['theme1','theme2'],
-            count:0
+            idSeance:0,
+            themesSeance:['theme seance 1','theme seance 2'],
+            phaseDuJeuSeance:['phase du jeu 1','phase du jeu 2'],
+            cathegorieSeance:['cathegorie seance 1','cathegorie seance 2'],
+            listeDesSeances:[],
             
         },
         mutations:{
             addExercice(state,exercice){
-                state.listeDesExercices.push(exercice)
+                let ex = {
+                    partie: '',
+                    theme: ''
+                };
+                  ex.partie=exercice.partie;
+                  ex.theme=exercice.theme;
+                state.listeDesExercices.push(ex)
             },
             addExerciceSeance(state,exercice){
                 state.listeDesExercicesSeance.push(exercice)
             },
-            updateCounter(state,value){
-                state.count=value;
+            updateidSeance(state,value){
+                state.idSeance=value;
+            },
+            addSeance(state,seance){
+                state.listeDesSeances.push(seance)
+            },
+            emptyTabExercicesSeance(state){
+                state.listeDesExercicesSeance.length = 0
             },
 
         },
@@ -29,9 +45,15 @@ const createStore=()=>{
             addExerciceSeance(VuexContext,exercice){
                 VuexContext.commit('addExerciceSeance',exercice)
             },
-            updateCounter(VuexContext,value){
-                VuexContext.commit('updateCounter',value)
-            }
+            updateidSeance(VuexContext,value){
+                VuexContext.commit('updateidSeance',value)
+            },
+            addSeance(VuexContext,seance){
+                VuexContext.commit('addSeance',seance)
+            },
+            emptyTabExercicesSeance(VuexContext){
+                VuexContext.commit('emptyTabExercicesSeance')
+            },
         },
         getters:{
             loadOptionsPartie(state){
@@ -46,9 +68,21 @@ const createStore=()=>{
             loadlisteDesExercicesSeance(state){
                 return state.listeDesExercicesSeance;
             },
-            getCount(state){
-                return state.count;
-            }
+            getidSeance(state){
+                return state.idSeance;
+            },
+            loadThemesSeance(state){
+                return state.themesSeance;
+            },
+            loadPhaseDuJeuSeance(state){
+                return state.phaseDuJeuSeance;
+            },
+            loadCathegorieSeance(state){
+                return state.cathegorieSeance;
+            },
+            loadlisteDesSeances(state){
+                return state.listeDesSeances;
+            },
 
         }
     })

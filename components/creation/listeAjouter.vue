@@ -7,17 +7,11 @@
     
 </template>
 <script>
-import exerciceAjouter from '@/components/exerciceAjouter'
+import exerciceAjouter from '@/components/creation/exerciceAjouter'
 export default {
   components:{
     exerciceAjouter,
   },
- /* props:{
-    list:{
-      type:Array,
-      required:true,
-    }
-  }*/
   computed:{
     list(){
       return this.$store.getters.loadlisteDesExercices;
