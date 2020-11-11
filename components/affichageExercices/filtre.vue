@@ -6,7 +6,11 @@
             <option >Phase de jeu</option>
             </select>
         </div>
-        
+        <div class="w-40  rounded-md ml-4 text-sm  py-2">
+            <select  class="w-full  pl-8 h-6 rounded-md font-hairline">
+            <option >Procédé</option>
+            </select>
+        </div>
         <div class="w-40  rounded-md ml-4 text-sm  py-2">
             <select  class="w-full  pl-8 h-6 rounded-md font-hairline">
             <option >Théme</option>

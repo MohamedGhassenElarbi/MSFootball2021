@@ -10,7 +10,11 @@
   },
   "dependencies": {
     "bootstrap-vue": "^2.17.0",
+    "iview": "^3.5.4",
+    "lodash": "^4.17.20",
     "nuxt": "^2.14.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.2.0"
+  }
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-4 gap-1 mx-24 ">
+    <div class="grid grid-cols-4  mx-20 ">
       <div v-for="item in list" :key="item.name" >
         <exerciceAjouter :item="item"></exerciceAjouter>
       </div>  
